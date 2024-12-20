@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Khan_San\\source\\repos\\GradeBook\\src\\GradeBook\\GradeBook.csproj": {}
+    "C:\\Users\\Khan_San\\source\\repos\\Hand-on-Practice\\GradeBook\\src\\GradeBook\\GradeBook.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Khan_San\\source\\repos\\GradeBook\\src\\GradeBook\\GradeBook.csproj": {
+    "C:\\Users\\Khan_San\\source\\repos\\Hand-on-Practice\\GradeBook\\src\\GradeBook\\GradeBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Khan_San\\source\\repos\\GradeBook\\src\\GradeBook\\GradeBook.csproj",
+        "projectUniqueName": "C:\\Users\\Khan_San\\source\\repos\\Hand-on-Practice\\GradeBook\\src\\GradeBook\\GradeBook.csproj",
         "projectName": "GradeBook",
-        "projectPath": "C:\\Users\\Khan_San\\source\\repos\\GradeBook\\src\\GradeBook\\GradeBook.csproj",
+        "projectPath": "C:\\Users\\Khan_San\\source\\repos\\Hand-on-Practice\\GradeBook\\src\\GradeBook\\GradeBook.csproj",
         "packagesPath": "C:\\Users\\Khan_San\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Khan_San\\source\\repos\\GradeBook\\src\\GradeBook\\obj\\",
+        "outputPath": "C:\\Users\\Khan_San\\source\\repos\\Hand-on-Practice\\GradeBook\\src\\GradeBook\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

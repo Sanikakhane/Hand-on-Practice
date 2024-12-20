@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GradeBook
-build_property.ProjectDir = C:\Users\Khan_San\source\repos\GradeBook\src\GradeBook\
+build_property.ProjectDir = C:\Users\Khan_San\source\repos\Hand-on-Practice\GradeBook\src\GradeBook\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
