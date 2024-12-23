@@ -6,6 +6,8 @@ namespace GradeBook
 {
     class Program
     {
+        enum monthsOfyear { Jan, Feb, March, April, May, Jun, July, August, Sept, Oct, Nov, Dec };
+
         static void Main(string[] args)
         {
             var book = new Book("Sanika's grade book");
@@ -37,6 +39,12 @@ namespace GradeBook
             Console.WriteLine("The highest value is "+stats.High);
             Console.WriteLine("The Lowest value is  "+stats.Low);
             Console.WriteLine("The average of the numbers is " + Math.Round(stats.Average,1));
+
+
+            if("Jan"==monthsOfyear.Jan.ToString())
+            {
+                Console.WriteLine("Its right");
+            }
             
                 
         }
