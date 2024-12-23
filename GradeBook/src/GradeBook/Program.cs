@@ -11,9 +11,13 @@ namespace GradeBook
         static void Main(string[] args)
         {
             var book = new Book("Sanika's grade book");
-            Console.WriteLine("Enter How many number You want to enter");
+
+
+            //Taking inputs from command prompt
+            //Console.WriteLine("Enter How many number You want to enter");
             
-            var input = Console.ReadLine();
+
+            /*var input = Console.ReadLine();
             var count = double.Parse(input);
             Console.WriteLine("Enter the numbers");
             for (int i = 0;i<count;i++)
@@ -38,15 +42,52 @@ namespace GradeBook
             var stats= book.GetStatistics();
             Console.WriteLine("The highest value is "+stats.High);
             Console.WriteLine("The Lowest value is  "+stats.Low);
-            Console.WriteLine("The average of the numbers is " + Math.Round(stats.Average,1));
+            Console.WriteLine("The average of the numbers is " + Math.Round(stats.Average,1*/
 
-
+            //Learning about enum
             if("Jan"==monthsOfyear.Jan.ToString())
             {
                 Console.WriteLine("Its right");
             }
             
-                
+
+            //Date Time Datatype
+            DateTime dateTime = DateTime.Today;
+            Console.WriteLine(dateTime);
+
+            DateTime birthday = new DateTime(2003, 5, 1);
+            DateTime endDay = DateTime.Today;
+
+            //Console.WriteLine(endDay.Year - birthday.Year+" "+endDay.Month-birthday.Month+" "+endDay.Day-birthday.Day
+            //
+
+
+            //Escape characters
+            string path = "C:\\Users\\Khan_San\\source\\repos\\Hand-on-Practice";
+            string str = "\"Hii!!!!!\"";
+            Console.WriteLine(path);
+            Console.WriteLine(str);
+
+            //parse and Tryparse functions
+            string s = "1236";
+            int n=int.Parse(s);
+            Console.WriteLine(n);
+
+            string a = "89";
+            int result;
+            if(int.TryParse(a,out result))
+            {
+                Console.WriteLine($"Success {result}");
+            }
+            else
+            {
+                Console.WriteLine("Unsuccessful");
+            }
+
+
+
+
+
         }
     }
 }
