@@ -10,12 +10,12 @@ namespace GradeBook
 
         static void Main(string[] args)
         {
-            var book = new Book("Sanika's grade book");
+            //var book = new Book("Sanika's grade book");
 
 
             //Taking inputs from command prompt
             //Console.WriteLine("Enter How many number You want to enter");
-            
+
 
             /*var input = Console.ReadLine();
             var count = double.Parse(input);
@@ -45,7 +45,7 @@ namespace GradeBook
             Console.WriteLine("The average of the numbers is " + Math.Round(stats.Average,1*/
 
             //Learning about enum
-            if("Jan"==monthsOfyear.Jan.ToString())
+            /*if("Jan"==monthsOfyear.Jan.ToString())
             {
                 Console.WriteLine("Its right");
             }
@@ -82,12 +82,51 @@ namespace GradeBook
             else
             {
                 Console.WriteLine("Unsuccessful");
+            }*/
+
+
+            //pass by Reference 
+            int a=5,b=6;
+            /*Console.WriteLine(add(a, b));
+            Console.WriteLine(a+" "+b);
+
+
+            Console.WriteLine(add(a,ref b));
+            Console.WriteLine(a + " " + b);*/
+
+
+            //Params
+            int c = 10, d = 20;
+            double e = 10.6;
+            Console.WriteLine(add(a,b,c,d,10,20));
+
+
+
+
+
+
+        }
+
+        public static int add(int a,int b)
+        {
+            b += 10;
+            return a + b;
+        }
+
+        public static int add(int a,ref int b)
+        {
+            b += 10;
+            return a + b;
+        }
+
+        public static int add(params int[] values)
+        {
+            int result = 0;
+            foreach(int i in values)
+            {
+                result += i;
             }
-
-
-
-
-
+            return result;
         }
     }
 }
