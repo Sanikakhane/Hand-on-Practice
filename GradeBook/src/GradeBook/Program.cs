@@ -3,7 +3,57 @@ using System;
 using System.Collections.Generic;
 
 namespace GradeBook
+
 {
+    class Person
+    {
+        private string? name;
+        protected int Id;
+        public string? Name
+        {
+            get { return name; }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    name = value;
+                }
+                else
+                {
+                    throw new ArgumentException("Name cannot be null");
+                }
+            }
+        }
+        
+    }
+    class Employee : Person
+    {
+        private double salary;
+        public double Salary
+        {
+            get { return salary; }
+            set
+            {
+                if(salary>=0)
+                {
+                    salary = value;
+                }
+                else
+                {
+                    throw new ArgumentException("Salary must be grater than 0");
+                }
+            }
+        }
+        public void setid(int id)
+        {
+            Id = id;
+        }
+        public int getid()
+        {
+            return Id;
+        }
+
+    }
     class Program
     {
         enum monthsOfyear { Jan, Feb, March, April, May, Jun, July, August, Sept, Oct, Nov, Dec };
@@ -86,22 +136,34 @@ namespace GradeBook
 
 
             //pass by Reference 
-            int a=5,b=6;
-            /*Console.WriteLine(add(a, b));
-            Console.WriteLine(a+" "+b);
+
+            // Console.WriteLine(add(a, b));
+            /*  var a = 5;
+             var b = 6;
+             Console.WriteLine(a+" "+b);
 
 
-            Console.WriteLine(add(a,ref b));
-            Console.WriteLine(a + " " + b);*/
+             Console.WriteLine(add(a,ref b));
+             Console.WriteLine(a + " " + b);*/
+
+
 
 
             //Params
-            int c = 10, d = 20;
-            double e = 10.6;
-            Console.WriteLine(add(a,b,c,d,10,20));
+            /* int c = 10, d = 20;
+             double e = 10.6;
+             Console.WriteLine(add(a,b,c,d,10,20));*/
 
 
+            //Protected access modifier
+            Person p = new Person();
+            p.Name = "Sanika";
+            Console.WriteLine(p.Name);
 
+            Employee e = new Employee();
+            e.Name = "Sanika";
+            e.setid(1);
+            Console.WriteLine(e.getid());
 
 
 
